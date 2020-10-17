@@ -8,6 +8,7 @@
   --dark-color-light: #e164be;
   --dark-color-lighten: #db47b1;
   --white-color: #fff9f9;
+  --pink-color: #ed1e65;
 
   --body-font: "Poppins", sans-serif;
   --big-font-size: 1.25rem;
@@ -102,7 +103,10 @@ img {
 .section {
   padding: 5rem;
 }
-
+.section-title {
+  text-align: center;
+  padding: 2rem;
+}
 .title-container {
   background: transparent;
   position: absolute;
@@ -165,6 +169,9 @@ img {
   z-index: var(--z-fixed);
   background-color: var(--dark-color-light);
 }
+.l-main {
+  background-color: var(--pink-color);
+}
 .nav {
   height: var(--header-height);
   display: flex;
@@ -209,7 +216,7 @@ img {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.button {
+/* .button {
   display: inline-block;
   background-color: #b10e0e;
   color: var(--dark-color);
@@ -222,7 +229,7 @@ img {
 .button:hover {
   transform: translateY(0.25rem);
   border-radius: 4px;
-}
+} */
 
 /*Drives*/
 .pedal__container {
@@ -242,7 +249,7 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
-  background-color: var(--dark-color-lighten);
+  background-color: #dfdfdf;
   border-radius: 0.5rem;
   transition: 0.3s;
 }
@@ -257,17 +264,6 @@ img {
   border-radius: 0.5rem;
   transition: 0.3s;
 }
-
-/* .pedal__drive {
-  position: absolute;
-  left: 0.2rem;
-  background-color: var(--dark-color);
-  color: var(--white-color);
-  padding: 0.1rem 0.16rem;
-  border-radius: 0.25rem;
-  font-size: var(--h2-font-size);
-  transform: rotate(-90deg);
-} */
 
 .container__img {
   width: 320px;
@@ -316,7 +312,7 @@ img {
 .newsletter__container {
   background-color: var(--dark-color);
   color: var(--white-color);
-  padding: 2rem 0.5rem;
+  padding: 2rem 1rem;
   border-radius: 0.5rem;
   text-align: center;
 }
@@ -354,6 +350,7 @@ img {
     align-items: center;
     background-color: var(--white-color);
     padding: 0.2rem;
+    padding-top: 1rem;
     border-radius: 0.25rem;
     height: 30px;
   }
@@ -385,7 +382,12 @@ footer {
   font-size: var(--smaller-font-size);
   color: var(--dark-color);
 }
-
+.adios-content {
+  font-size: var(--big-font-size);
+}
+.section {
+  background-color: var(--pink-color);
+}
 /*Media Queries*/
 @media screen and (min-width: 769px) {
   body {
